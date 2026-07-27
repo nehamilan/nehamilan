@@ -1,16 +1,34 @@
-## Hi there 👋
+<H1>Hi there, I'm Neha 👋</H1> 
 
-<!--
-**nehamilan/nehamilan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a **product lead for national research data infrastructure** — a public, bilingual repository platform where research datasets are deposited, curated, published, and preserved. Some of that data is sensitive and governed by funder policy, so most of my job is deciding what a system is allowed to do on its own and where a human has to stand in the loop.
 
-Here are some ideas to get you started:
+I build small AI products against the real problems that platform has. Each one ships with a product brief, not just a demo.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<H2> Projects</H2>
+
+Every project here answers the same eight questions: what problem, what decision the model makes, what it may never output, how it's measured, what happens when it's unsure, where the human sits, what can go wrong, and what I traded away. The brief is the deliverable. The app or prototypes are proof the brief is real.
+
+| Project | What it does | AI decision | Status |
+| -------------- | --------------- | --------------- | ----------------- |			
+| Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Classification against a fixed controlled vocabulary; low-confidence and high-risk items escalate to a human queue instead of auto-routing | In progress |
+
+<H2>How I work</H2>
+
+1. **I define the model's job narrowly before anyone builds.** Allowed outputs are a closed list. The constraint list — what it must never do — is written before the prompt is. Vague AI scope is where these projects die.
+2. **I decide what happens when the model is wrong, because it will be.** Confidence threshold, escalation path, review queue. On the platform I run, a misrouted routine request costs a day; a mishandled sensitive-data request is a governance incident. Those are not the same error, so the system doesn't treat them the same. I optimize for the costly miss and accept false escalations.
+3.  **Output is a draft until a human approves it.** Never presented as truth. Corrections feed back into the evaluation set.
+4.  **I state the metric and the target before the build, not after the results.** Parse rate, precision, recall, a confusion matrix, and a stated reason for which one I'm optimizing.
+5. **I write down what I gave up.** Every brief has a decisions-and-tradeoffs section, and a changelog showing the first accuracy number, the error pattern I found, the change I made, and the number after.
+
+<H2>Background</H2>
+
+- Product Lead on a national research data repository — own the product lifecycle end to end: strategy, requirements, specs, metrics, release. Sensitive-data deposit pathway, curation and preservation workflows, bilingual delivery, funder-policy compliance.
+- Previously Operations Lead for the same service — SLAs with distributed infrastructure partners, change management, operational risk, and the transition from limited production to full national production.
+- Founded and chair a user community group — 20+ researchers and librarians, quarterly. Their input has redirected real roadmap decisions, including a metrics-platform rebuild and a site redesign.
+- Founding member of a national working group defining trustworthy-repository standards — persistent identifiers, preservation, metadata, cybersecurity, data-handling ethics, Indigenous data sovereignty, bilingualism. Designed and ran the group's member recruitment.
+- Built a repository collection-growth program from scratch with no budget or assigned staff — strategy through outreach through consultations. Reached 5,000+ researchers; collections grew from 12 to 30 over the period.
+- Domains: research data management, data governance, metadata standards, regulated and sensitive data.
+
+<H2>What I'm looking for</H2>
+
+AI product work where being wrong has consequences — regulated data, health, research, public infrastructure, banking. The interesting problem in those settings isn't model quality. It's deciding what the system is permitted to do unsupervised.
