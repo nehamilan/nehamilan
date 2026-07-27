@@ -22,12 +22,13 @@ Every project here answers the same eight questions: what problem, what decision
 
 <H2>Background</H2>
 
-- Product Lead on a national research data repository — own the product lifecycle end to end: strategy, requirements, specs, metrics, release. Sensitive-data deposit pathway, curation and preservation workflows, bilingual delivery, funder-policy compliance.
-- Previously Operations Lead for the same service — SLAs with distributed infrastructure partners, change management, operational risk, and the transition from limited production to full national production.
-- Founded and chair a user community group — 20+ researchers and librarians, quarterly. Their input has redirected real roadmap decisions, including a metrics-platform rebuild and a site redesign.
-- Founding member of a national working group defining trustworthy-repository standards — persistent identifiers, preservation, metadata, cybersecurity, data-handling ethics, Indigenous data sovereignty, bilingualism. Designed and ran the group's member recruitment.
-- Built a repository collection-growth program from scratch with no budget or assigned staff — strategy through outreach through consultations. Reached 5,000+ researchers; collections grew from 12 to 30 over the period.
-- Domains: research data management, data governance, metadata standards, regulated and sensitive data.
+- **Product Lead** on a national research data repository — own the product lifecycle end to end: strategy, requirements, specs, metrics, release. Sensitive-data deposit pathway, curation and preservation workflows, bilingual delivery, funder-policy compliance.
+- **Previously Operations Lead** for the same service — SLAs with distributed infrastructure partners, change management, operational risk, and the transition from limited production to full national production.
+- **Founded and chair a user community group** — 20+ researchers and librarians, quarterly. Their input has redirected real roadmap decisions, including a metrics-platform rebuild and a site redesign.
+- **Founding member** of a national working group defining trustworthy-repository standards — persistent identifiers, preservation, metadata, cybersecurity, data-handling ethics, Indigenous data sovereignty, bilingualism. Designed and ran the group's member recruitment.
+- **Co-chair** of Data Repository Expert Group (DREG). The DREG brings together representatives from key repository stakeholder communities to provide high-level coordination for platform-specific working groups and to foster a broad and cohesive approach to repository development in Canada.
+- **Started in regulated systems** — delivery and project management on validated pharmaceutical systems, where every change carried an audit trail and "we'll fix it after launch" wasn't an available option. That's where the instinct for controlled vocabularies, approval gates, and provable decisions comes from.
+- **Domains**: research data management, data governance, metadata standards, regulated and sensitive data.
 
 <H2>What I'm looking for</H2>
 
