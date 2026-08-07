@@ -15,14 +15,16 @@ Every project here answers the same eight questions: what problem, what decision
 | Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Input is unstructured, output space is closed, errors are recoverable in review — LLM | Completed | AML alert triage, phishing report triage |
 | PulseReq | Replaces paper diagnostic requisitions with a tokenized, expiring link — the clinician orders by LOINC code, the patient books where and when, the lab receives a structured FHIR R4 `ServiceRequest` instead of re-keying a printed form | Every decision is enumerable and must be reproducible in audit — deterministic rules, no model | In progress | Payment authorization links, time-bound access grants |
 
-**Intake Triage & Routing Assistant**
+**1. Intake Triage & Routing Assistant**
 
 **Pattern:** unstructured intake → classification against a closed vocabulary → confidence-gated routing → human review queue for the costly misses.
+
 **Same shape elsewhere:** AML alert triage in banking, where a false negative is a regulatory finding and a false positive is an analyst hour. Phishing-report triage in security operations, where the reported-email queue has to be sorted before anyone can act on it.
 
-**PulseReq**
+**2. PulseReq**
 
 **Pattern:** replace a paper artifact with a tokenized, expiring link → structured payload to the receiving system → policy enforced as workflow rules, not judgment.
+
 **Same shape elsewhere:** payment-authorization links in fintech, where the token's expiry is the control. Time-bound access grants in security, where entitlement, expiry, and revocation must be provable after the fact.
 
 <H2>How I work</H2>
