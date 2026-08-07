@@ -11,7 +11,7 @@ Every project here answers the same eight questions: what problem, what decision
 | Project | What it does | AI decision | Status |
 | -------------- | --------------- | --------------- | ----------------- |			
 | Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Classification against a fixed controlled vocabulary; low-confidence and high-risk items escalate to a human queue instead of auto-routing | Completed |
-| PulseReq | Replaces paper diagnostic requisitions with a tokenized, expiring link — the clinician orders by LOINC code, the patient books where and when, the lab receives a structured FHIR R4 `ServiceRequest` instead of re-keying a printed form | one — rules-based interoperability and workflow logic (embargo timers, link expiry, walk-in policy gating); no model-driven decision in current scope | In progress |
+| PulseReq | Replaces paper diagnostic requisitions with a tokenized, expiring link — the clinician orders by LOINC code, the patient books where and when, the lab receives a structured FHIR R4 `ServiceRequest` instead of re-keying a printed form | None — rules-based interoperability and workflow logic (embargo timers, link expiry, walk-in policy gating); no model-driven decision in current scope | In progress |
 
 <H2>How I work</H2>
 
