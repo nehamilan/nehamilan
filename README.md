@@ -29,11 +29,11 @@ Every project here answers the same eight questions: what problem, what decision
 
 <H2>How I work</H2>
 
-1. **I define the model's job narrowly before anyone builds.** Allowed outputs are a closed list. The constraint list — what it must never do — is written before the prompt is. Vague AI scope is where these projects die.
-2. **I decide what happens when the model is wrong, because it will be.** Confidence threshold, escalation path, review queue. On the platform I run, a misrouted routine request costs a day; a mishandled sensitive-data request is a governance incident. Those are not the same error, so the system doesn't treat them the same. I optimize for the costly miss and accept false escalations.
-3.  **Output is a draft until a human approves it.** Never presented as truth. Corrections feed back into the evaluation set.
-4.  **I state the metric and the target before the build, not after the results.** Parse rate, precision, recall, a confusion matrix, and a stated reason for which one I'm optimizing.
-5. **I write down what I gave up.** Every brief has a decisions-and-tradeoffs section, and a changelog showing the first accuracy number, the error pattern I found, the change I made, and the number after.
+- **Narrow scope first.** Allowed outputs are a closed list. The constraint list — what it must never do — is written before the prompt is. Vague AI scope is where these projects die.
+- **Plan for the model being wrong.** Confidence threshold, escalation path, review queue. On the platform I run, a misrouted routine request costs a day; a mishandled sensitive-data request is a governance incident. Those are not the same error, so the system doesn't treat them the same. I optimize for the costly miss and accept false escalations.
+- **Output is a draft until a human approves it.** Never presented as truth. Corrections feed back into the evaluation set.
+- **Metric and target come before the build.** Parse rate, precision, recall, a confusion matrix, and a stated reason for which one I'm optimizing.
+- **I write down what I gave up.** Every brief has a decisions-and-tradeoffs section, and a changelog showing the first accuracy number, the error pattern I found, the change I made, and the number after.
 
 <H2>Background</H2>
 
