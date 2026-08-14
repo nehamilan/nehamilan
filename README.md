@@ -10,10 +10,10 @@ Every project here answers the same eight questions: what problem, what decision
 
 **When I use a model and when I don't:** an LLM when the input is unstructured, the output space is closed, and a wrong answer is recoverable in human review. Deterministic rules when the decision is enumerable, legally binding, or has to be reproducible in an audit.
 
-| Project | What it does | Why AI/Why not | Status | Transfers to |
-| -------------- | --------------- | --------------- | ----------------- | ----------------- |				
-| Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Input is unstructured, output space is closed, errors are recoverable in review — LLM | Completed | AML alert triage, phishing report triage |
-| PulseReq | Replaces paper diagnostic requisitions with a tokenized, expiring link — the clinician orders by LOINC code, the patient books where and when, the lab receives a structured FHIR R4 `ServiceRequest` instead of re-keying a printed form | Every decision is enumerable and must be reproducible in audit — deterministic rules, no model | In progress | Payment authorization links, time-bound access grants |
+| Project | What it does | Why AI/Why not | Status | Transfers to |  Link to |
+| -------------- | --------------- | --------------- | ----------------- | ----------------- | ----------------- |					
+| Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Input is unstructured, output space is closed, errors are recoverable in review — LLM | Completed | AML alert triage, phishing report triage | [Website](https://triage-routing-assistant.lovable.app/auth) |
+| PulseReq | Replaces paper diagnostic requisitions with a tokenized, expiring link — the clinician orders by LOINC code, the patient books where and when, the lab receives a structured FHIR R4 `ServiceRequest` instead of re-keying a printed form | Every decision is enumerable and must be reproducible in audit — deterministic rules, no model | Completed | Payment authorization links, time-bound access grants | [Prototype](https://paperless-patient-pass.lovable.app/) |
 
 **1. Intake Triage & Routing Assistant**
 
