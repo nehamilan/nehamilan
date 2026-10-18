@@ -16,18 +16,25 @@ Every project here answers the same eight questions: what problem, what decision
 | PulseReq | Replaces paper diagnostic requisitions with a tokenized, expiring link — the clinician orders by LOINC code, the patient books where and when, the lab receives a structured FHIR R4 `ServiceRequest` instead of re-keying a printed form | Every decision is enumerable and must be reproducible in audit — deterministic rules, no model | Completed | Payment authorization links, time-bound access grants | [Prototype](https://paperless-patient-pass.lovable.app/) |
 | Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Input is unstructured, output space is closed, errors are recoverable in review — LLM | Completed | AML alert triage, phishing report triage | [Prototype](https://triage-routing-assistant.lovable.app/auth) |
 
+**1. GateKeeper**
 
-**1. Intake Triage & Routing Assistant**
+**Pattern:** unstructured request prose → deterministic policy checks (ethics, approved fields, use category, sensitivity tier) → LLM judgment only for criteria that can’t be resolved by lookup (proportionality, ambiguous purpose, novel use) → fixed escalation rules that override all other results → human reviewer approves every recommendation before anything moves.
 
-**Pattern:** unstructured intake → classification against a closed vocabulary → confidence-gated routing → human review queue for the costly misses.
-
-**Same shape elsewhere:** AML alert triage in banking, where a false negative is a regulatory finding and a false positive is an analyst hour. Phishing-report triage in security operations, where the reported-email queue has to be sorted before anyone can act on it.
+**Same shape elsewhere:** regulated loan or grant eligibility review, where some criteria are checkable by rule and others require judgment about fit — but certain conditions (e.g. sanctions list match, missing documentation) always escalate regardless of everything else. Clinical trial enrollment screening, where protocol criteria are deterministic but investigator judgment on ambiguous cases still needs a human sign-off and an audit trail.
 
 **2. PulseReq**
 
 **Pattern:** replace a paper artifact with a tokenized, expiring link → structured payload to the receiving system → policy enforced as workflow rules, not judgment.
 
 **Same shape elsewhere:** payment-authorization links in fintech, where the token's expiry is the control. Time-bound access grants in security, where entitlement, expiry, and revocation must be provable after the fact.
+
+**3. Intake Triage & Routing Assistant**
+
+**Pattern:** unstructured intake → classification against a closed vocabulary → confidence-gated routing → human review queue for the costly misses.
+
+**Same shape elsewhere:** AML alert triage in banking, where a false negative is a regulatory finding and a false positive is an analyst hour. Phishing-report triage in security operations, where the reported-email queue has to be sorted before anyone can act on it.
+
+
 
 <H2>How I work</H2>
 
