@@ -12,8 +12,10 @@ Every project here answers the same eight questions: what problem, what decision
 
 | Project | What it does | Why AI/Why not | Status | Transfers to |  Link to |
 | -------------- | --------------- | --------------- | ----------------- | ----------------- | ----------------- |					
-| Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Input is unstructured, output space is closed, errors are recoverable in review — LLM | Completed | AML alert triage, phishing report triage | [Prototype](https://triage-routing-assistant.lovable.app/auth) |
+| GateKeeper | Reads unstructured researcher access requests and produces a triage recommendation — forward, return for clarification, or escalate — with a criterion-by-criterion evidence trail | Intake is unstructured prose; output space is closed (3 routes); errors are recoverable in human review — LLM. Routing rules for identifiable-tier fields and Indigenous governance datasets are enumerable and must be auditable — deterministic |In development | Health data access triage, regulated dataset governance, any multi-criteria eligibility review with a human approval step | PRD -- Coming soon |
 | PulseReq | Replaces paper diagnostic requisitions with a tokenized, expiring link — the clinician orders by LOINC code, the patient books where and when, the lab receives a structured FHIR R4 `ServiceRequest` instead of re-keying a printed form | Every decision is enumerable and must be reproducible in audit — deterministic rules, no model | Completed | Payment authorization links, time-bound access grants | [Prototype](https://paperless-patient-pass.lovable.app/) |
+| Intake Triage & Routing Assistant | Reads unstructured incoming requests and drafts a triage decision — category, priority, route, reason, confidence | Input is unstructured, output space is closed, errors are recoverable in review — LLM | Completed | AML alert triage, phishing report triage | [Prototype](https://triage-routing-assistant.lovable.app/auth) |
+
 
 **1. Intake Triage & Routing Assistant**
 
